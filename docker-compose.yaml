@@ -44,7 +44,7 @@ services:
     image: gin-example/article-server
     build:
       context: .
-      dockerfile: cmd/server/Dockerfile
+      dockerfile: Dockerfile
     container_name: article-server
     ports:
       - "8081:8081"
