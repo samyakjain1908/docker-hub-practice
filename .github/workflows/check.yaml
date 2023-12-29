@@ -49,8 +49,8 @@ jobs:
 
       - name: push Image
         
-        run: 
-          sudo docker tag article-server:latest samyyaakk/article-server:latest
+        run: |
+          sudo docker tag article-server:latest samyyaakk/article-server:latest &&
           sudo docker push samyyaakk/article-server:latest
 
   Docker-compose:
