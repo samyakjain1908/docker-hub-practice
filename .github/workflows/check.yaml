@@ -57,7 +57,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: samyyaakk/article-server:latest
+          tags: user/app:latest
 
   Docker-compose:
       runs-on: ubuntu-latest
