@@ -5,7 +5,7 @@ generate:
 	go generate ./...
 
 build: # build a server
-	go build -a -o article-server gin-rest-api-example/cmd/server
+	go build -a -o article-server docker-hub-practice/cmd/server
 
 test:
 	go clean -testcache
