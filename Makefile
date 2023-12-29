@@ -5,7 +5,7 @@ generate:
 	go generate ./...
 
 build: # build a server
-	go build -a -o article-server docker-hub-practice/cmd/server
+	go build -a -o article-server ./cmd/server
 
 test:
 	go clean -testcache
@@ -24,4 +24,3 @@ compose.%:
 migrate:
 	docker run --rm -v migrations:/migrations --network host migrate/migrate -path=/migrations/ \
 	-database mysql://root:password@localhost:3306/local_db?charset=utf8&parseTime=True&multiStatements=true up 2
-
