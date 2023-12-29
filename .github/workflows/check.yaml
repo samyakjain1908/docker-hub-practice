@@ -50,8 +50,8 @@ jobs:
       - name: push Image
         
         run: |
-          sudo docker tag article-server:latest samyyaakk/article-server:latest &&
-          sudo docker push samyyaakk/article-server:latest
+          docker tag article-server:latest samyyaakk/assignment-repo:latest &&
+          docker push samyyaakk/assignment-repo:latest
 
   Docker-compose:
       runs-on: ubuntu-latest
